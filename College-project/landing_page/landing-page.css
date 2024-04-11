@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+img{
+  width: 260px;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+  border-radius: 30px;
+}
+.image-wrapper,
+.component-wrapper{
+  width: 50%;
+  border-radius: 10px;
+  margin: 1em;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+}
+
+.image-wrapper{
+  margin-right: 10px;
+  background: url(/College-project/landing_page/picture.png);
+  background-position: center;
+  background-size: cover;
+}
+.component-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7em;
+  min-width: 350px;
+}
+.component-wrapper .title{
+  
+  text-align: left;
+}
+.btn{
+  width: 100%;
+  padding: 9px 145px ;
+  border: none;
+  border-radius: 5px;
+  background-color: #76DE37;
+  cursor: pointer;
+}
+
+.btn:hover{
+  opacity: .8;
+}
+.btn:active{
+  opacity: .7;
+}
+
+.sign-in{
+  display: flex;
+}
+.sign-in p{
+  margin-right: 5px;
+}
+.sign-in a{
+  text-decoration: none;
+  color: #000;
+}
+.sign-in a:hover{
+  text-decoration: underline;
+}
