@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #C4C4C4;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+img{
+  width: 260px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+  border-radius: 30px;
+}
+.image-wrapper,
+.component-wrapper{
+  width: 50%;
+  border-radius: 30px;
+  margin: 1em;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+
+}
+
+.image-wrapper{
+  margin-right: 10px;
+  background: url(/College-project/picture.png);
+  background-position: center;
+  background-size: cover;
+}
+.component-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7em;
+  min-width: 600px;
+  background: #fff;
+}
+.component-wrapper .title{
+  
+  text-align: left;
+}
+
+.input-wrapper{
+  width: 100%;
+}
+.input input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 9px 9px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #1E1E1E;
+}
+.or{
+  position: relative;
+}
+.or::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 4em;
+  background-color: #000;
+  top: 50%;
+  left: 20px;
+}
+
+.or::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 4em;
+  background-color: #000;
+  top: 50%;
+  right: 20px;
+}
+
+.submit{
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border-radius: 5px;
+  background-color: #76DE37;
+  cursor: pointer;
+}
+
+.submit:hover{
+  opacity: .8;
+}
+.submit:active{
+  opacity: .7;
+}
+
+.register{
+  display: flex;
+}
+.register span{
+  margin-right: 5px;
+}
+.register a{
+  text-decoration: none;
+  color: #000;
+}
+.register a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 500px){
+  .container{
+    flex-direction: column;
+    margin-top: 2em;
+    height: auto;
+  }
+  .image-wrapper,
+  .component-wrapper{
+    width: 80%;
+    margin: 1em auto;
+    min-width: none;
+  }
+  .component-wrapper{
+    padding: 10px ;
+  }
+}
